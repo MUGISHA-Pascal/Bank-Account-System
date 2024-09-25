@@ -40,10 +40,41 @@ public class BankSystem {
                        for (BankAccount Account : accounts ){
                            if(Account.accountNumber == accountNumber2){
                           System.out.println("** you are logged in **");
-                          System.out.println("--------------------------");
-                          System.out.println("welcome to your bank account ");
-                          System.out.println("------------------------");
-
+                          boolean booleanChecker2= true;
+                          while(booleanChecker2) {
+                              System.out.println("--------------------------");
+                              System.out.println("welcome to your bank account ");
+                              System.out.println("------------------------");
+                              System.out.println("options available");
+                              System.out.println("1. withdraw");
+                              System.out.println("2. deposit");
+                              System.out.println("3. check balance");
+                              System.out.println("4. exit");
+                              System.out.println("------------------------");
+                              System.out.println("enter your choice(number) :");
+                              int Choice = scanner.nextInt();
+                              scanner.nextLine();
+                              switch (Choice) {
+                                  case 1:
+                                      System.out.println("Enter the amount of money to withdraw : ");
+                                      int incomeWithdraw = scanner.nextInt();
+                                      scanner.nextLine();
+                                      System.out.println("Enter the account number to verify : ");
+                                      int accountNumber3 = scanner.nextInt();
+                                      scanner.nextLine();
+                                      break;
+                                  case 2:
+                                      break;
+                                  case 3:
+                                      break;
+                                  case 4:
+                                      booleanChecker2 = false;
+                                      break;
+                                  default:
+                                      System.out.println("unknown choice");
+                                      break;
+                              }
+                          }
                            }else{
                                System.out.println("? don't have an account ?");
                            }
