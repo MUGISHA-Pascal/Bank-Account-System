@@ -5,7 +5,7 @@ public class BankAccount {
     public String password;
     public int accountNumber;
 
-    public BankAccount(String username,String password , int accountNumber){
+    public void inputs(String username,String password , int accountNumber){
         this.username = username;
         this.password = password;
         this.accountNumber = accountNumber;
