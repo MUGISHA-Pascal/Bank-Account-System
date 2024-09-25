@@ -60,12 +60,37 @@ public class BankSystem {
                                       int incomeWithdraw = scanner.nextInt();
                                       scanner.nextLine();
                                       System.out.println("Enter the account number to verify : ");
-                                      int accountNumber3 = scanner.nextInt();
+                                      int accountNumber4 = scanner.nextInt();
                                       scanner.nextLine();
+                                      for(BankAccount account1 : accounts){
+                                          if(account1.accountNumber == accountNumber4){
+                                              account1.balance = account1.balance - incomeWithdraw;
+                                          }
+                                      }
                                       break;
                                   case 2:
+                                      System.out.println("Enter the amount of money to deposit : ");
+                                      int incomeDeposit = scanner.nextInt();
+                                      scanner.nextLine();
+                                      System.out.println("Enter the account number to verify : ");
+                                      int accountNumber3 = scanner.nextInt();
+                                      scanner.nextLine();
+                                      for(BankAccount account1 : accounts){
+                                          if(account1.accountNumber == accountNumber3){
+                                              account1.balance = incomeDeposit;
+                                          }
+                                      }
                                       break;
                                   case 3:
+                                      System.out.println("Enter the account number to verify : ");
+                                      int accountNumber5 = scanner.nextInt();
+                                      scanner.nextLine();
+                                      for(BankAccount account1 : accounts){
+                                          if(account1.accountNumber == accountNumber5){
+                                              System.out.println("your balance : ");
+                                              System.out.println(account1.balance);
+                                          }
+                                      }
                                       break;
                                   case 4:
                                       booleanChecker2 = false;
