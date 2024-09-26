@@ -1,6 +1,6 @@
 package org.example;
 import java.util.*;
-import org.example.classes.BankAccount;
+import org.example.BankAccount;
 
 public class BankSystem {
     public static void main(String[] args) {
@@ -77,7 +77,7 @@ public class BankSystem {
                                       scanner.nextLine();
                                       for(BankAccount account1 : accounts){
                                           if(account1.accountNumber == accountNumber3){
-                                              account1.balance = incomeDeposit;
+                                              account1.balance = account1.balance + incomeDeposit;
                                           }
                                       }
                                       break;

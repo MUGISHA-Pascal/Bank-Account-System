@@ -1,5 +1,4 @@
-package org.example.classes;
-
+package org.example;
 public class BankAccount {
     public String username;
     public String password;
